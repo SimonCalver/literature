@@ -1,0 +1,49 @@
+% A template for writing chapters for a thesis or whatever
+
+% \documentclass{report}
+\documentclass[a4paper]{article}
+
+\include{mymacros}
+
+\title{Literature reviews}
+% \author{}
+\date{}
+
+ 
+\begin{document}
+\maketitle
+
+
+
+
+
+\section{Pendant drops}
+ 
+The shape of pendant drops has been studied extensively   the past hundred years or so ~\cite{Gauss1877PrincipiaAequilibrii,thomson1886CapillaryAttraction}. 
+Observing pendant drops is useful in determining fluid properties, in particular, the interfacial tension can be found by comparing the shape of actual fluid drops with those predicted by theory.
+There have been numerous tables drawn up for this purpose~\cite{Bashforth1883AnAction} and extended over time \cite{Fordham1948OnDrops,Mills1953TablesDifferences,Stauffer1965TheTechnique}, although with the advent of cheap computing,    the fitting can be done automatically~\cite{Arashiro1999UsePolymers}.     Exact solutions can be found~\cite{Chesters1977AnAxis,Hajirahimi2015ExactDrops}, and perturbations to these give asymptotic solutions when \eg the effects of gravity are small~\cite{OBrien1991OnTechniques}. 
+%So numerical methods are mostly used in solving these equations \cite{Rienstra1990TheTension}.
+In most applications it is the shape of the interface that is important not the pressure. But we want to be able to say what the pressure will be given a printed  drop of a known base radius and volume. Analytic expressions can easily be derived relating the pressure, volume and contact angle, but finding the relation between them for arbitrary  drops   requires numerical simulation.  Although we are considering static drops there may be experimental regimes in which the dynamics are important. For instance with a large enough volume a portion of the fluid may detach from the substrate, a phenomena known as pinch off. 
+
+
+
+
+\section{Rivulets}
+ long rivulets flowing down plane in which the problem is 1D are common~\cite{Towell1966HydrodynamicsFlow} relies on looking at the cross-section only to find interface shape with fixed contact line shape is curvature (1D) standard modelling (navier etc), there are only  analytic solutions in limiting cases (small contact angle, small gravity)
+ 
+ 
+Rivulet flow has been widely studied  in various  contexts, most notably in relation to gravity driven flow down  an inclined plane . 
+There have also been models of fluid pumped through rivulets~\cite{SvetlichnayaStudyMinichannels}.
+The problem is simplified when the rivulet  is much longer than it is wide, asymptotic analysis in this regime shows that the  cross-section is given by  the 2D Young-Laplace equation, the solution of which is also well understood~\cite{Sumesh2010TheDrops}. 
+But in general the equations cannot  be solved analytically  so numerics are needed~\cite{Perazzo2004Navier-StokesPlane}.
+ 
+  
+
+ 
+
+ 
+\bibliographystyle{abbrv} 
+\bibliography{references}  
+
+\end{document}
+
